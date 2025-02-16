@@ -1,0 +1,17 @@
+// Ejercicio 7 IF
+let notaEstudiante = prompt(`Ingrese la nota del estudiante`)
+let notaEstudianteEntero = parseInt(notaEstudiante)
+let calificacionEstudiante = null
+if (notaEstudianteEntero >=90) {
+    calificacionEstudiante = "A"
+} else if(notaEstudianteEntero >=80) {
+    calificacionEstudiante = "B"
+} else if(notaEstudianteEntero >=70) {
+    calificacionEstudiante = "C"
+} else if(notaEstudianteEntero >=60) {
+    calificacionEstudiante = "D"
+}
+else{
+    calificacionEstudiante = "F"
+}
+alert(`La calificación es ${calificacionEstudiante}`)
