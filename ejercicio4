@@ -1,0 +1,26 @@
+// Ejercicio 4 IF
+let tipoDePoliza = prompt(`Ingrese el número de la opción de póliza que desea:
+1 - Básica (Cobertura 50%)
+2 - Intermedia (Cobertura 75%)
+3 - Premium (Cobertura 100%)`)
+let tipoPolizaEntero = parseInt(tipoDePoliza)
+let precioDePoliza = 0  
+let nombrePoliza = null
+let eleccionValida = true
+if (tipoPolizaEntero == 1) {
+    precioDePoliza = 50
+    nombrePoliza = "Básica"
+} else if(tipoPolizaEntero == 2){
+    precioDePoliza = 75
+    nombrePoliza = "Intermedia"
+} else if (tipoPolizaEntero == 3) {
+    precioDePoliza = 100
+    nombrePoliza = "Premium"
+}
+else{
+    alert(`Su elección no es válida`)
+    eleccionValida = false
+}
+if (eleccionValida) {
+    alert(`El precio de su póliza ${nombrePoliza} es de ${precioDePoliza} dólares`) 
+}
