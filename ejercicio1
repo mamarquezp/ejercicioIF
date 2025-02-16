@@ -1,0 +1,12 @@
+// Ejercicio 1 IF
+let montoTotal = Number( prompt(`Ingrese el total de la compra`))
+let totalAPagar = 0                        
+if (montoTotal>=200) {
+    totalAPagar = montoTotal * (1 - 0.2)
+} else if(montoTotal>=100){
+    totalAPagar = montoTotal * (1 - 0.1)
+}
+else{
+    totalAPagar = montoTotal
+}
+alert(`Su total a pagar es de: ${totalAPagar.toFixed(2)} dólares`)
