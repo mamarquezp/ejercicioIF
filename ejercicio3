@@ -1,0 +1,14 @@
+// Ejercicio 3 IF
+let edadDelCliente = prompt(`Ingrese la edad del cliente`)
+const edadDelClienteEntero = parseInt(edadDelCliente)
+let totalDeCuenta = Number( prompt(`Ingrese el total de la cuenta`))
+let totalPagar = 0                        
+if (edadDelClienteEntero>65) {
+    totalPagar = totalDeCuenta * (1 - 0.25)
+} else if(edadDelClienteEntero>=12){
+    totalPagar = totalDeCuenta
+}
+else{
+    totalPagar = totalDeCuenta * (1 - 0.5)
+}
+alert(`Su total de la cuenta es de: ${totalPagar.toFixed(2)} `)
