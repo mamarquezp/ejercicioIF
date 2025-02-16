@@ -1,0 +1,14 @@
+// Ejercicio 6 IF
+let cantidadDePrendas = ( prompt(`Ingrese la cantidad de prendas compradas`))
+const cantidadDePrendasEntero = parseInt(cantidadDePrendas)
+let totalDeCompra = Number( prompt(`Ingrese el total de la compra`))
+let montoTotalAPagar = 0                        
+if (cantidadDePrendasEntero>5) {
+    montoTotalAPagar = totalDeCompra * (1 - 0.2)
+} else if(cantidadDePrendas>3){
+    montoTotalAPagar = totalDeCompra * (1 - 0.1)
+}
+else{
+    montoTotalAPagar = totalDeCompra
+}
+alert(`Su total a pagar es de: ${montoTotalAPagar.toFixed(2)} `)
