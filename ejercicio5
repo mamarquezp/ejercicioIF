@@ -1,0 +1,13 @@
+// Ejercicio 5 IF
+let edadDelEspectador = ( prompt(`Ingrese la edad del espectador`))
+const edadDelEspectadorEntero = parseInt(edadDelEspectador)
+let precioDeEntrada = 0                      
+if (edadDelEspectadorEntero>65) {
+    precioDeEntrada = 7
+} else if(edadDelEspectadorEntero>=12){
+    precioDeEntrada = 10
+}
+else{
+    precioDeEntrada = 5
+}
+alert(`El precio de su entrada es: ${precioDeEntrada} dólares`)
