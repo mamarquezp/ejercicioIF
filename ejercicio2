@@ -1,0 +1,13 @@
+// Ejercicio 2 IF 
+let unidadesProducidas = Number( prompt(`Ingrese el total de unidades producidas`))
+let salarioBase = Number( prompt(`Ingrese el salario`))
+let salarioConBono = 0                        
+if (unidadesProducidas>200) {
+    salarioConBono = salarioBase * (1 + 0.1)
+} else if(unidadesProducidas>100){
+    salarioConBono = salarioBase * (1 + 0.05)
+}
+else{
+    salarioConBono = salarioBase
+}
+alert(`Su salario este mes es de: ${salarioConBono.toFixed(2)} `)
